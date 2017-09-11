@@ -4,3 +4,47 @@ header{
   text-shadow: 2px 2px #02010a;
   border-radius: 10px 10px 0px 0px;
 }
+#imagenprincipal img{
+  width: 80%;
+  display: block;
+  margin: auto;
+
+}
+#imagenprincipal{
+  background-color: #82c3a6;
+}
+
+#imagensecundaria div{
+  display: block;
+  margin: auto;
+}
+#imagensecundaria{
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #d5c75f;
+  padding: 1px;
+}
+#imagensec1 img:hover{
+  transform: rotate(10deg);
+  box-shadow: 10px 10px #82c3a6;
+  border: 2px solid black;
+}
+#imagensec2 img:hover{
+  transform: translate(20px, -5px);
+  box-shadow: 10px 10px #82c3a6;
+  border: 2px solid black;
+}
+footer{
+  font-family: 'Oxygen', sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  background-color: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+footer div{
+  padding: 3%;
+  text-align: center;
+}
