@@ -1,13 +1,67 @@
-header{
+
+*
+{
+	margin:0;
+}
+
+body{
+  font-family: 'Dancing Script', cursive;
+  background-color: black;
+}
+#contenido{
+	width: 900px;
+	margin: 0 auto;
+  min-height: 200px;
+}
+
+.cabecera{
   background-color:  #5b7989;
   color: white;
   text-shadow: 2px 2px #02010a;
   border-radius: 10px 10px 0px 0px;
+  padding: 15px;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
 }
+#menuprincipal{
+  text-align: right;
+}
+#menuprincipal a{
+    text-shadow: none;
+}
+#menuprincipal a:link {
+    color: white;
+}
+#menuprincipal a:visited {
+    color: white;
+}
+#menuprincipal a:hover {
+  text-decoration: none;
+}
+#imagensecundaria a:link {
+    color: black;
+}
+#imagensecundaria a:visited {
+    color: black;
+}
+#imagensecundaria a:hover {
+  text-decoration: none;
+}
+#actual{
+  text-decoration: none;
+}
+#titulo{
+  width: 70%;
+  text-indent: 15px;
+}
+
 #imagenprincipal img{
   width: 80%;
   display: block;
   margin: auto;
+  padding: 10px;
 
 }
 #imagenprincipal{
@@ -17,34 +71,84 @@ header{
 #imagensecundaria div{
   display: block;
   margin: auto;
+  text-align: center;
+  width: 50%
+}
+#imagensecundaria img{
+  width: 80%;
+  padding: 10px;
+  border: 1px solid black;
+  padding: 0;
 }
 #imagensecundaria{
   display: flex;
   flex-flow: row wrap;
   background-color: #d5c75f;
-  padding: 1px;
+  padding: 20px;
+
 }
 #imagensec1 img:hover{
   transform: rotate(10deg);
   box-shadow: 10px 10px #82c3a6;
   border: 2px solid black;
+  transition: transform 1s;
 }
 #imagensec2 img:hover{
   transform: translate(20px, -5px);
   box-shadow: 10px 10px #82c3a6;
   border: 2px solid black;
+  transition: transform 1s;
 }
 footer{
-  font-family: 'Oxygen', sans-serif;
+  font-family: ;
   font-size: 12px;
   line-height: 20px;
   background-color: #C6d5c5;
   border-radius: 0 0 10px 10px;
+  padding: 10px;
+}
+.container{
   display: -webkit-flex;
   display: flex;
+  -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
 }
-footer div{
-  padding: 3%;
+.f1,.f2,.f3,.f4{
+  width: 100%;
+  margin: 30px;
+}
+@media (min-width:900px) {
+  .f1,.f2,.f3,.f4{
+    width: 25%;
+      margin: 0;
+}
+}
+@media (max-width:900px) {
+  #contenido{
+    margin: 1%;
+    width: 98%;
+}
+#titulo{
+  width: 100%;
+  text-indent: 0px;
   text-align: center;
+  font-size: auto;
+}
+#menuprincipal{
+  width: 100%;
+  text-indent: 0px;
+  text-align: center;
+  font-size: auto;
+}
+#imagensecundaria div{
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 100%
+}
+}
+
+.redes img{
+  padding: 2%;
+  width:10%;
 }
