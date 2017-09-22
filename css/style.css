@@ -76,7 +76,6 @@ body{
 }
 #imagensecundaria img{
   width: 80%;
-  padding: 10px;
   border: 1px solid black;
   padding: 0;
 }
@@ -151,4 +150,49 @@ footer{
 .redes img{
   padding: 2%;
   width:10%;
+}
+
+
+
+
+
+
+
+.paisajef1 div{
+	display: block;
+  margin: auto;
+  text-align: center;
+  width: 30%;
+}
+.paisajef1 img{
+	width: 100%;
+	border: 1px solid black;
+	padding: 0;
+}
+.paisajef1{
+	display: flex;
+  flex-flow: row wrap;
+  background-color: #d5c75f;
+  padding: 20px;
+
+}
+@media (max-width:900px) {
+  .paisajef1 div{
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 100%
+}
+}
+.p1{
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+.p2{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+.p3{
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);
 }
